@@ -9,8 +9,9 @@
  }
 
  .intro_bg{
-     background-image:url("image/intro.jpg");
-    
+     background-image: linear-gradient(rgba(0,0,0, 0.3),
+     rgba(0,0,0,0.3)),url("image/intro.jpg");
+ 
      height: 640px;
      width: 100%;
  }
@@ -21,29 +22,30 @@
 
      height: 86px;
  }
- .searchArea{
+ .search_area{
      width: 300px;
      height: 40px;
-     background:rgba(0, 0, 0, 0);
+     background:rgba(0, 0, 0,0.5);
      border-radius:5px;
-   
+
      margin-top:24px;
  }
- .searchArea > form >input{
+ .search_area > form >input{
     border:none;
     background:rgba(0, 0, 0, 0);
     width:250px;
     height: 40px;
     color:#fff;
+
     padding-left: 10px;
  }
- .searchArea > form >span{
+ .search_area > form >span{
      width: 50px;
      color: #fff;
-     padding-left: 10px;
-    
+     padding-left: 5px;
+    font-size: 15px;
      cursor: pointer;
-
+    font-weight: lighter;
  }
  .nav{
      display: flex;
@@ -59,8 +61,45 @@
  .nav > li > a{
   color: #fff; 
 }
+
+.intro_text{
+    width: 100%;
+    margin: 231px auto 231px auto;
+    font-size: 23px;
+    text-align: center;
+}
 .intro_text > h1,
 .intro_text > h2{
- color: white;
+ color:#fff;
+}
+.amout{
+    position: relative;
+    top:-66px;
+    display: flex;
+    margin: auto;
+    width: 1280px;
+    background:red;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.amout > li {
+    flex:1;
+    height: 132px;
+    background: white;
+}
+.amout > li > div {
+   
+    height: 57px;
+    border-right:1px solid white;
+    margin-top: 35px;
+    text-align: center;
+}
+.amout > li:not(:last-child) > div{
+    border-right:1px solid #e1e1e1;
 
+}
+.contents{
+    font-size: 20px;
+}
+.result{
+    font-size: 14px;
 }
