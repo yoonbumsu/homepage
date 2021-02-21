@@ -1,0 +1,249 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+     list-style: none;
+     text-decoration: none;
+     border-collapse: collapse;
+     margin: 0px;
+     padding: 0px;
+     color: #000;
+    
+ }
+
+ .intro_bg{
+     background-image: linear-gradient(rgba(0,0,0, 0.3),
+     rgba(0,0,0,0.3)),url("image/intro.jpg");
+ 
+     height: 640px;
+     width: 100%;
+ }
+ .header{
+     display:flex;
+     width: 1280px;
+     margin: auto;
+
+     height: 86px;
+ }
+ .search_area{
+     width: 300px;
+     height: 40px;
+     background:rgba(0, 0, 0,0.5);
+     border-radius:5px;
+
+     margin-top:24px;
+ }
+ .search_area > form >input{
+    border:none;
+    background:rgba(0, 0, 0, 0);
+    width:250px;
+    height: 40px;
+    color:#fff;
+
+    padding-left: 10px;
+ }
+ .search_area > form >span{
+     width: 50px;
+     color: #fff;
+     padding-left: 5px;
+    font-size: 15px;
+     cursor: pointer;
+    font-weight: lighter;
+ }
+ .nav{
+     display: flex;
+     line-height: 84px;
+     justify-content: flex-end;
+     width:calc(1280px - 300px);
+    
+ }
+ .nav > li{
+     margin-left: 80px;
+     
+ }
+ .nav > li > a{
+  color: #fff; 
+}
+
+.intro_text{
+    width: 100%;
+    margin: 231px auto 231px auto;
+    font-size: 23px;
+    text-align: center;
+}
+.intro_text > h1,
+.intro_text > h2{
+ color:#fff;
+}
+.amout{
+    position: relative;
+    top:-66px;
+    display: flex;
+    margin: auto;
+    width: 1280px;
+    background:red;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.amout > li {
+    flex:1;
+    height: 132px;
+    background: white;
+}
+.amout > li > div {
+   
+    height: 57px;
+    border-right:1px solid white;
+    margin-top: 35px;
+    text-align: center;
+}
+.amout > li:not(:last-child) > div{
+    border-right:1px solid #e1e1e1;
+
+}
+.contents2{
+    font-size: 8px;
+}
+.contents{
+    font-size: 20px;
+}
+.contents_bold{
+    size: 18px;
+    font-weight:bold;
+}
+.result{
+    font-size: 14px;
+}
+
+
+.main_text0{
+    width: 100%;
+    height: 600px;
+    margin-top: -132px;
+    background: #f1f2f3;
+}
+.main_text0 > h1{
+    padding-top: 116px;
+    font-size: 35px;
+    text-align: center;
+   font-weight: lighter;
+}
+.main_text0 > .contents{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.icons{
+    display: flex;
+    width: 1280px; 
+    margin: auto;
+    
+}
+.icons > li {
+    flex:1;
+    margin-top: 49px;
+    background: white;
+    height: 302px;
+    text-align: center;
+}
+.icons > li >.icon_img{
+    margin-top: 36px;
+}
+.icons >li:not(:last-child){
+    margin-right: 20px;
+}
+.icons .contents{
+    width: 240px;
+    font-size: 13px;
+    margin:auto;
+    text-align: center;
+}
+.icons .more{
+    width: 100px;
+    text-align: center;
+    background: #2f7af4;
+    color: white;
+    margin:25px auto;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+
+}
+.main_text1{
+    width: 100%;
+    height:659px;
+}
+.main_text1 > h1{
+    padding-top: 50px;
+    text-align: center;
+    
+}
+.main_text1 > .contents{
+
+    text-align: center;
+}
+.service{
+    width: 1280px;
+    display: flex;
+    margin:49px auto;
+    height: 427px;
+}
+
+.service >.result{
+    padding-left: 20px;
+}
+.main_text2{
+    width: 100%;
+    height: 418px;
+    background-image: url("image/contact.png");
+}
+.main_text2 > ul{
+    display:flex;
+    padding-top: 138px;
+}
+.main_text2 > ul > li{
+    flex: 1;
+    text-align: center;
+}
+.main_text2 > ul >li >div>h2{
+    font-weight: lighter;
+    font-size: 40px;
+}
+.main_text2 > ul >li >div>h2,
+.main_text2 > ul >li >div{
+    color: white;
+    padding:5px;
+}
+.more2{
+    width: 220px;
+    height: 40px;
+    cursor: pointer;
+    margin:  16px auto;
+    border: 1px solid #fff;
+    line-height: 40px;
+}
+footer{
+    display: flex;
+    background: black;
+    padding:30px;
+    
+
+}
+footer > div:first-child{
+    flex: 3;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+    padding-top: 20px;
+}
+
+footer > div:last-child{
+    flex:9;
+    color:white;
+
+}
+@media screen and(max-width:768px){
+    .nav{
+        flex-direction: column;
+    }
+    .amout{
+        flex-direction: column;
+    }
+}
