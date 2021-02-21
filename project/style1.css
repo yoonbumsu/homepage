@@ -1,10 +1,12 @@
+
+
 body{
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
 a {
     text-decoration: none;
-    color: white;
+    color: black;
     
     
   }
@@ -13,51 +15,89 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
+    background: white;
     padding: 8px 12px;
     
   }
   /* Logo with text */
   .navbar_logo {
-    font-size: 24px;
-  
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 40px;
+    font-weight: bold;
   }
   .navbar_logo i {
-   color: orange;
+   color: black;
   }
   /* Menu */
   .navbar_menu {
+    
+    padding-top: 55px;
+    padding-right: 130px;
     display: flex;
     padding-left: 0;
     list-style: none;
   }
-  .navbar_menu li {
+  .navbar_menu ul {
+    
     padding: 8px 12px;
+    padding-right: 30px;
   }
-  .navbar_menu li:hover {
-    background-color: orange;
-    border-radius: 4px;
-  }
+ 
   .navbar_icons {
+    font-size: 25px;
     list-style: none;
-    color: orange;
+    color: black;
     padding-left: 0;
     display: flex;
+    padding-top: 55px;
+
     
   }
   /* Icons */
   .navbar_icons li {
     padding: 8px 10px;
   }
-  .navbar_button{
-    color: orange;
+  .navbar_togglebtn{
+    color: black;
     position:absolute ;
-    right: 32px;
+    right: 30px;
     font-size: 18px;
     display: none;
 }
+    .title{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 30px;
+    }
 
-  @media screen and (max-width: 768px) {
+    .sub_menu{
+      margin-top: 47px;
+        list-style: none;
+        float: left;
+    }
+    .sub_menu li{
+        list-style: none;
+        padding:5px 5px;
+    font-weight: lighter;
+    }
+    .main_cloth{
+        display: flex;
+        list-style: none;
+       /*
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap:20px;*/
+    }
+    .main_cloth li{
+      display: flex;
+      list-style: none;
+      padding: 40px;
+      float: left;
+  }
+   
+    
+  @media screen and (max-width: 1024px) {
    
     .navbar {
       flex-direction: column;
@@ -65,19 +105,36 @@ a {
       padding: 8px 24px;
     }
     .navbar_menu{
+        
+        display: none;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         width: 100%;
     }
         .navbar_menu li{
            text-align: center;
             width: 100%;
+      
     }
     .navbar_icons{
+        display: none;
         justify-content: center;
         width: 100%;
+        padding-top: 0px;
+        padding-left:10px;
     }
-    .navbar_button{
-       display:block;
+   .navbar_togglebtn{
+        display:block;
+        right: 30;
     }
-}
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display:flex;
+    }
+    .all{
+     padding-left: 20px;
+    }
+    .main_cloth {
+      width: 30%;
+    }
+   }
