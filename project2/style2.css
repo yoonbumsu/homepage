@@ -32,7 +32,7 @@ header .icons .fa-accessible-icon{
 .videos {
     margin: auto;
     top: 0;
-    position: sticky;
+    /*position: sticky;*/
     text-align: center;
     background-color: black;
 }
@@ -61,12 +61,12 @@ header .icons .fa-accessible-icon{
 }
 
 
-}
-.info .titleandbutton {
+
+.info1 .titleandbutton {
     display: flex;
  
 }
-.info .title {
+.info1 .title {
  overflow: hidden;
  display: -webkit-box;
  -webkit-box-orient: vertical;
@@ -76,6 +76,7 @@ header .icons .fa-accessible-icon{
 
 .action {
     margin:  13px 0;
+   
     list-style: none;
     justify-content: space-around;
     padding: 8px 13px;
@@ -92,20 +93,79 @@ header .icons .fa-accessible-icon{
 .action button i {
     margin-bottom: 15px;
 }
-.channel {
+.chanel {
+    border-top:0.5px solid darkgray;
+    border-bottom:0.5px solid darkgray;
     display: flex;
-    
+    justify-content: space-between;
 }
-.channel .metadata {
+.chanel .metadata {
     display: flex;
+    align-items: center;
 }
-.channel .metadata > img {
+.chanel .info{
+    padding: 10px;
+}
+.chanel .metadata > img
+     {
   width: 36px; 
   height: 36px;
-  padding-left: 15px;
-  border-radius: 40px;
+  border-radius: 50%;
 }
-.channel .info  .name {
+.chanel .metadata .name {
     font-size: 20px;
-    font-weight: bold;
+   
+    display: flex;
+   margin-left: 5px;
+}
+.chanel .metadata .subadwad{
+    margin-left: 5px;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+}
+.chanel .subscribe {
+    background-color: white;
+    border: none;
+    color: red;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.upnext .title1{
+    padding: 10px 10px;
+    color: darkgray;
+}
+.upnext .item{
+    display: flex;
+   height:300px;
+   padding: 10px;
+}
+.upnext .item .img {
+    flex: 1 1 35%;
+}
+.upnext .item .img1 >img{
+    width: 100%;
+    height: 100%;
+}
+.upnext .item .info1 {
+    flex: 1 1 60%;
+}
+.upnext .item .title3{
+    font-size: 15px;
+}
+.upnext .item .name {
+    display: flex;
+    color: darkgray;
+    flex-direction: column;
+}
+.upnext .item .views {
+    display: flex;
+    color: darkgray;
+    flex-direction: column;
+}
+.upnext .item .morebtn {
+    height: 30px;
+    flex:  1 1 5%;
+    background-color: white;
+    border: none;
 }
