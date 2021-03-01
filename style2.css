@@ -1,0 +1,171 @@
+:root{
+    --side-padding:12px; 
+}
+*{
+    padding:0;
+    margin: 0;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:var(--side-padding);
+    background-color: black;
+    color: white;
+}
+header .logo{
+    
+    font-size: 20px;
+}
+header .logo  i{
+    color: red;   
+    
+   }
+header .icons .fa-accessible-icon{
+    margin-right: 12px;
+    color: brown;
+}
+.videos {
+    margin: auto;
+    top: 0;
+    /*position: sticky;*/
+    text-align: center;
+    background-color: black;
+}
+.videos video {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}  
+.hashtag {
+    display: flex;
+    font-size: 20px;
+    color: cornflowerblue;
+}
+.hashtag > li {
+    padding: 8px 0px;
+    list-style: none;
+}
+.data{
+    font-size: 20px;
+    padding: 10px 15px;
+    
+}
+.view{
+    padding: 8px 0px;
+    color: darkgray;
+}
+
+
+
+.info1 .titleandbutton {
+    display: flex;
+ 
+}
+.info1 .title {
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 2;
+ margin-right: 13px;
+}
+
+.action {
+    margin:  13px 0;
+   
+    list-style: none;
+    justify-content: space-around;
+    padding: 8px 13px;
+    display: flex;
+}
+.action button {
+    display: flex;
+    border: none;
+    color: darkgray;
+    background-color: white;
+    flex-direction: column;
+    font-size: 30px;
+}
+.action button i {
+    margin-bottom: 15px;
+}
+.chanel {
+    border-top:0.5px solid darkgray;
+    border-bottom:0.5px solid darkgray;
+    display: flex;
+    justify-content: space-between;
+}
+.chanel .metadata {
+    display: flex;
+    align-items: center;
+}
+.chanel .info{
+    padding: 10px;
+}
+.chanel .metadata > img
+     {
+  width: 36px; 
+  height: 36px;
+  border-radius: 50%;
+}
+.chanel .metadata .name {
+    font-size: 20px;
+   
+    display: flex;
+   margin-left: 5px;
+}
+.chanel .metadata .subadwad{
+    margin-left: 5px;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+}
+.chanel .subscribe {
+    background-color: white;
+    border: none;
+    color: red;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.upnext .title1{
+    padding: 10px 10px;
+    color: darkgray;
+}
+.upnext .item{
+    display: flex;
+   height:300px;
+   padding: 10px;
+}
+.upnext .item .img {
+    flex: 1 1 35%;
+}
+.upnext .item .img1 >img{
+    width: 100%;
+    height: 100%;
+}
+.upnext .item .info1 {
+    flex: 1 1 60%;
+}
+.upnext .item .title3{
+    font-size: 15px;
+}
+.upnext .item .name {
+    display: flex;
+    color: darkgray;
+    flex-direction: column;
+}
+.upnext .item .views {
+    display: flex;
+    color: darkgray;
+    flex-direction: column;
+}
+.upnext .item .morebtn {
+    height: 30px;
+    flex:  1 1 5%;
+    background-color: white;
+    border: none;
+}
