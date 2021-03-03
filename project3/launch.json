@@ -1,0 +1,72 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    
+        "items":[{
+            "type":"tshirt",
+            "gender":"female",
+            "size":"large",
+            "color":"pink",
+            "image":"imgs/pink_t.png"
+        },
+        {
+            "type":"skirt",
+            "gender":"female",
+            "size":"large",
+            "color":"blue",
+            "image":"imgs/pink_s.png"
+        },
+        {
+            "type":"pants",
+            "gender":"female",
+            "size":"large",
+            "color":"pink",
+            "image":"imgs/pink_p.png"
+        },
+        {
+            "type":"tshirt",
+            "gender":"female",
+            "size":"large",
+            "color":"blue",
+            "image":"imgs/blue_t.png"
+        },
+        {
+            "type":"skirt",
+            "gender":"female",
+            "size":"large",
+            "color":"blue",
+            "image":"imgs/blue_s.png"
+        },
+        {
+            "type":"pants",
+            "gender":"female",
+            "size":"large",
+            "color":"blue",
+            "image":"imgs/blue_p.png"
+        },
+        {
+            "type":"tshirt",
+            "gender":"female",
+            "size":"large",
+            "color":"yellow",
+            "image":"imgs/yellow_t.png"
+        },
+        {
+            "type":"pants",
+            "gender":"female",
+            "size":"large",
+            "color":"yellow",
+            "image":"imgs/yellow_p.png"
+        },
+        {
+            "type":"skirt",
+            "gender":"female",
+            "size":"large",
+            "color":"pink",
+            "image":"imgs/yellow_S.png"
+        }
+    ]
+    }
+
